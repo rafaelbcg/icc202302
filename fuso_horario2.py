@@ -4,8 +4,7 @@ minuto = int(input('minuto em brasilia: '))
 
 if hora+3 >= 24:
     print(f'em londres: {hora-21} horas e {minuto} minutos')
-
-if hora+3<24:
+else:
     print(f'em londres: {hora+3} horas e {minuto} minutos')
 
 
