@@ -1,0 +1,19 @@
+import math
+
+def f(x):
+    return math.log(x**2) - 0.7
+
+a = 1
+b = 2
+epsilon = 0.00001
+
+for i in range(5):
+    c = a - f(a) * (b - a) / (f(b) - f(a))
+    if abs(f(c)) < epsilon:
+        break
+    elif f(a) * f(c) < 0:
+        b = c
+    else:
+        a = c
+
+print("A raiz da função é aproximadamente", c)
