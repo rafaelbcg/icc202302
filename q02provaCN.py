@@ -8,7 +8,8 @@ b = 2
 epsilon = 0.00001
 
 for i in range(5):
-    c = a - f(a) * (b - a) / (f(b) - f(a))
+    c = (a*f(b) - b*f(a))/(f(b)-f(a))
+    print(f'{a:.4f} - {f(a):.4f}   {b:.4f} - {f(b):.4f}   {c:.4f} - {f(c):.4f}')
     if abs(f(c)) < epsilon:
         break
     elif f(a) * f(c) < 0:
