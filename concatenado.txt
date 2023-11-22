@@ -1,0 +1,4 @@
+Olá, este é um arquivo de exemplo para testar as questões de manipulação de arquivos em Python.
+Ele contém várias linhas com diferentes palavras-chave, como Python, programação, velho, novo, entre outras.
+Espero que seja útil para suas práticas!
+Ol�, Python!
